@@ -1,7 +1,7 @@
 <?php
 
 function __autoload($class_name) {
-    include $class_name . '.php';
+    include 'mods/' . $class_name . '.php';
 }
 
 /**
