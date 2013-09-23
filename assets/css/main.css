@@ -93,12 +93,16 @@ li.complete {
     margin: 6px -40px;
 }
 
-#header {
+#header, #footer {
     background-color: #eee;
 }
 
 #footer {
-    height: 82px;
+    height: 41px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
 }
 
 th {
@@ -135,4 +139,15 @@ th {
 
 .caret {
     margin: 8px 0px;
+}
+
+span.footnote {
+    padding: 5px;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
+h1.title {
+    padding: 8px;
 }
