@@ -9,19 +9,19 @@ function __autoload($class_name) {
  *
  * @author 1Rogue
  */
-class ModuleManager {
+final class ModuleManager {
     
-    private $arr;
+    protected $arr = array();
     
     function __construct() {
-        $arr = array(
+        $this->arr = array(
             "global" => new Globals()
         );
     }
     
     public function getModule($name) {
-        $back = $arr[$name];
-        if ($arr === null) {
+        $back = $this->arr[$name];
+        if ($back === null) {
             return new Globals();
         }
         return $back;

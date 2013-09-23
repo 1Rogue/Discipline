@@ -7,10 +7,10 @@
  */
 interface Module {
     
-    public abstract function getHeader();
-    public abstract function getContent();
-    public abstract function getFooter();
-    public abstract function getName();
+    public function getHeader();
+    public function getContent();
+    public function getFooter();
+    public function getName();
     
 }
 

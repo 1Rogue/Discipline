@@ -5,7 +5,7 @@
  *
  * @author 1Rogue
  */
-class Globals extends Module {
+class Globals implements Module {
     
     function getName() {
         return "global";
