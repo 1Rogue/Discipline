@@ -30,7 +30,7 @@ include 'modules/ModuleManager.php';
     }
     ?>
     <body>
-        <div class="container">
+        <div class="container span12">
             <div id="header">
                 <?
                 $module->getHeader();
