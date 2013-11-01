@@ -15,12 +15,13 @@ final class ModuleManager {
     
     function __construct() {
         $this->arr = array(
-            "global" => new Globals()
+            "global" => new Globals(),
+            "example" => new Example()
         );
     }
     
     public function getModule($name) {
-        $back = $this->arr[$name];
+        $back = @$this->arr[$name];
         if ($back === null) {
             return new Globals();
         }
